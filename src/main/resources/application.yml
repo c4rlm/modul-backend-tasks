@@ -1,0 +1,22 @@
+spring:
+  application:
+      name: backend-tasks
+
+#database
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DB_NAME:dh_tasks}
+    username: ${DB_USERNAME:demo}
+    password: ${DB_PASSWORD:M6yhY424}
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 30000
+      max-lifetime: 60000
+      minimum-idle: 5
+      maximum-pool-size: 50
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
