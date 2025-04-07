@@ -25,3 +25,19 @@ GET http://localhost:8080/api/transactions/history/filter?page=0&size=20&sortBy=
 **Algunos parámetros:**
 - `page`: Número de página (por defecto `0`)
 - `keyword`: Filtra por nombre, número de transacción o tipo
+
+## TAREA 2
+
+### Endpoints (POST)
+NOT SUPPORTED
+```http
+POST http://localhost:8080/api/transactions/history/not-supported?name=Maria
+```
+NEVER
+```http
+POST http://localhost:8080/api/transactions/history/never?name=Maria
+```
+NESTED
+```http
+POST http://localhost:8080/api/transactions/history/nested?name=Maria&name2=Rosa
+```
